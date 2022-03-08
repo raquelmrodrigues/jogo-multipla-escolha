@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../assets/background_inicio.jpg);
+    font-family: 'Cinzel', serif;
+}
+
+
+div#corpo {
+    display: block;
+    align-items: center;
+    width: 50%;
+    margin: 100px auto 0px auto;
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+div#corpo h1 {
+
+    text-align: center;
+    padding: 20px;
+}
+
+div#corpo p {
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    font-size: large;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
