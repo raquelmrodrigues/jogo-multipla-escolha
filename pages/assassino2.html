@@ -14,7 +14,7 @@
     
     <div id="corpo">
         <h1>
-            Ele fica feliz com sua resposta e manda logo o segundo enigma:
+            Ele fica feliz com sua resposta e manda logo o último enigma:
         </h1>
         <p>
             Eu tiro barba todos os dias, mas a minha barba permanece a mesma. O que eu sou?</br>
@@ -25,27 +25,22 @@
         </p>
 
         <div id="resposta">
-            <button onclick="entrada()" id="botao">Responder</button>
+            <button onclick="validaResposta()" id="botao">Responder</button>
         </div>
         
     </div>
 
     <script>
-        function entrada() {
+         function validaResposta() {
             var resposta = prompt("Qual a resposta?")
-        }
-        
-        function validaResposta(resposta) {
-            if (resposta == B) {
-                window.location.href = "assassino1.html";
-            
+
+            if (resposta == "B") {
+                window.location.href = "final-assassino.html";
             }
             else {
                 window.location.href = "gameover.html";
             }
         }
-
-        validaResposta();
     </script>
 
 </body>

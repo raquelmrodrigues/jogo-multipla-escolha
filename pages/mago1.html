@@ -29,7 +29,7 @@
         </p>
 
         <div id="resposta">
-            <button onclick="entrada()" id="botao">Responder</button>
+            <button onclick="validaResposta()" id="botao">Responder</button>
         </div>
         
 
@@ -37,21 +37,16 @@
     </div>
 
     <script>
-        function entrada() {
+         function validaResposta() {
             var resposta = prompt("Qual a resposta?")
-        }
-        
-        function validaResposta(resposta) {
-            if (resposta == C) {
-                window.location.href = "mago1.html";
-            
+
+            if (resposta == "C") {
+                window.location.href = "mago2.html";
             }
             else {
                 window.location.href = "gameover.html";
             }
         }
-
-        validaResposta();
     </script>
 </body>
 </html>
