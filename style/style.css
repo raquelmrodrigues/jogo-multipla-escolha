@@ -16,7 +16,7 @@ div#corpo {
     align-items: center;
     width: 50%;
     margin: 100px auto 0px auto;
-    background-color: rgba(255, 255, 255, 0.418);
+    background-color: rgba(255, 255, 255, 0.61);
     padding: 20px;
     border-radius: 30px;
 }
@@ -29,11 +29,32 @@ div#corpo h1 {
 
 div#corpo p {
     display: block;
+    align-items: center;
+    display: block;
     text-align: left;
     padding-left: 50px;
     font-size: large;
-    display: block;
+    
 }
+
+#resposta {
+    display: block;
+    display: block;
+    text-align: left;
+    padding: 50px;
+    font-size: large;
+}
+
+#botao {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-size: large;
+    font-family: 'Cinzel', serif;
+}
+
+
+
 
 a {
     text-decoration: none;

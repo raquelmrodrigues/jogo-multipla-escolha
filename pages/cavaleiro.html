@@ -7,21 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Primeiro desafio</title>
 </head>
 <body>
     
     <div id="corpo">
-        <h1></h1>
+        <h1>Você é um cavaleiro andando pelas planícies de Evergard e se depara com um dragão turquesa no meio do caminho. O dragão diz que só te deixará passar caso resolva três enigmas.</br>Eis o primeiro enigma:</h1>
         <div>
-        <img src="assets/knight.png" width="200px">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae amet iure impedit maiores suscipit voluptates corporis velit nesciunt sint. Voluptatibus voluptate reprehenderit sapiente labore amet consectetur eos ratione enim.
+            Tem raízes misteriosas,</br>
+            É mais alta que as frondosa</br>
+            Sobe, sobe e também desce,</br>
+            Mas não cresce nem decresce.</br>
+            </br>
+            A - Manhã</br>
+            B - Montanha</br>
+            C - Árvore
         </p>
+
+        <div id="resposta">
+            <button onclick="entrada()" id="botao">Responder</button>
+        </div>
+        
 
         </div>
     </div>
 
+    <script>
+        function entrada() {
+            var resposta = prompt("Qual a resposta?")
+        }
+        
+        function validaResposta(resposta) {
+            if (resposta == B) {
+                window.location.href = "cavaleiro1.html";
+            
+            }
+            else {
+                window.location.href = "gameover.html";
+            }
+        }
+
+        validaResposta();
+    </script>
 </body>
 </html>

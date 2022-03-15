@@ -7,20 +7,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Primeiro desafio</title>
 </head>
 <body>
     
     <div id="corpo">
-        <h1>Escolha sua classe</h1>
-        <p>
-            
-        </p>
+        <h1>Você é um mago explorando o castelo de Lotric, no meio do caminho encontra uma criatura misteriosa,
+            ela diz que te deixa passar caso acerte três enigmas.</br>Eis o primeiro enigma:</h1>
         <div>
+        <p>
+            Sem asas volita,</br>
+            Sem vozes ele ulula,</br>
+            Sem dentes mordica</br>
+            Sem boca murmura.</br>
+            </br>
+            A - Vento</br>
+            B - Sol</br>
+            C - Casa
+        </p>
+
+        <div id="resposta">
+            <button onclick="entrada()" id="botao">Responder</button>
+        </div>
+        
 
         </div>
-        </div>
+    </div>
 
+    <script>
+        function entrada() {
+            var resposta = prompt("Qual a resposta?")
+        }
+        
+        function validaResposta(resposta) {
+            if (resposta == A) {
+                window.location.href = "mago1.html";
+            
+            }
+            else {
+                window.location.href = "gameover.html";
+            }
+        }
+
+        validaResposta();
+    </script>
 </body>
 </html>

@@ -8,29 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Document</title>
+    <title>Primeiro desafio</title>
 </head>
 <body>
     
     <div id="corpo">
-        <h1>Você é um assassino cuja missão é matar o rei de Isengard, 
-            chegando ao castelo para colocar o plano em prática você se depara com um guarda, 
-            ele diz que se você ajudar ele a resolver 3 enigmas irá te deixar passar.</br>Eis o primeiro enigma:
-        </h1>
+        <h1>O dragão se contenta com sua resposta e manda logo o último enigma:</h1>
+        <div>
         <p>
-            Cinco homens cavam uma vala de 5 metros em cinco
-            horas.</br> Quantas cavadores serão necessários para cavar
-            uma vala de 100 metros em 100 horas?</br>
+            Eu posso ser um deus, um planeta, e medir o calor. O que eu sou?</br>
             </br>
-            A - 5</br>
-            B - 100</br>
-            C - 10
+            A - Termomêtro</br>
+            B - Mercúrio</br>
+            C - Árvore
         </p>
 
         <div id="resposta">
             <button onclick="entrada()" id="botao">Responder</button>
         </div>
         
+
+        </div>
     </div>
 
     <script>
@@ -40,7 +38,7 @@
         
         function validaResposta(resposta) {
             if (resposta == A) {
-                window.location.href = "assassino1.html";
+                window.location.href = "cavaleiro1.html";
             
             }
             else {
@@ -50,6 +48,5 @@
 
         validaResposta();
     </script>
-
 </body>
 </html>

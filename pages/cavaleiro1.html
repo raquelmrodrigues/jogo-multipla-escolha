@@ -8,48 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Document</title>
+    <title>Segundo desafio</title>
 </head>
 <body>
     
     <div id="corpo">
-        <h1>Você é um assassino cuja missão é matar o rei de Isengard, 
-            chegando ao castelo para colocar o plano em prática você se depara com um guarda, 
-            ele diz que se você ajudar ele a resolver 3 enigmas irá te deixar passar.</br>Eis o primeiro enigma:
-        </h1>
+        <h1>O dragão se irrita com sua resposta correta e manda o segundo enigma:</h1>
+        <div>
         <p>
-            Cinco homens cavam uma vala de 5 metros em cinco
-            horas.</br> Quantas cavadores serão necessários para cavar
-            uma vala de 100 metros em 100 horas?</br>
+            Trinta cavalos brancos na colina avermelhada,</br>
+            Primeiro cerceiam,</br>
+            Depois pisoteiam,</br>
+            Depois não fazem nada.</br>
             </br>
-            A - 5</br>
-            B - 100</br>
-            C - 10
+            A - Calda</br>
+            B - Dentes </br>
+            C - Azul
         </p>
 
         <div id="resposta">
             <button onclick="entrada()" id="botao">Responder</button>
         </div>
         
+
+        </div>
     </div>
 
     <script>
         function entrada() {
             var resposta = prompt("Qual a resposta?")
         }
-        
+
         function validaResposta(resposta) {
-            if (resposta == A) {
-                window.location.href = "assassino1.html";
-            
+            if (resposta == dentes) {
+                window.location.href = "";
             }
             else {
                 window.location.href = "gameover.html";
             }
         }
-
-        validaResposta();
     </script>
-
 </body>
 </html>
