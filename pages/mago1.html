@@ -25,7 +25,8 @@
             </br>
             A - Cachorro</br>
             B - Hélice</br>
-            C - Escuro
+            C - Escuro</br>
+            D - Névoa
         </p>
 
         <div id="resposta">
@@ -38,14 +39,21 @@
 
     <script>
          function validaResposta() {
+            var tentativas = 2
             var resposta = prompt("Qual a resposta?")
 
-            if (resposta == "C") {
-                window.location.href = "mago2.html";
+            while (tentativas > 0) {
+
+                if (resposta == "C") {
+                    window.location.href = "mago2.html";
+                }
+                else {
+                    alert(`você errou e ainda tem ${tentativas} tentativas`)
+                    tentativas--;
+                    var resposta = prompt("Qual a resposta?")
+                }
             }
-            else {
-                window.location.href = "gameover.html";
-            }
+            window.location.href = "gameover.html";
         }
     </script>
 </body>

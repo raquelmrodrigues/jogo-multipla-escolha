@@ -20,7 +20,8 @@
             </br>
             A - Termomêtro</br>
             B - Mercúrio</br>
-            C - Árvore
+            C - Árvore</br>
+            D - Rio
         </p>
 
         <div id="resposta">
@@ -33,14 +34,21 @@
 
     <script>
           function validaResposta() {
+            var tentativas = 2
             var resposta = prompt("Qual a resposta?")
 
-            if (resposta == "B") {
-                window.location.href = "final-cavaleiro.html";
+            while (tentativas > 0) {
+
+                if (resposta == "B") {
+                    window.location.href = "final-cavaleiro.html";
+                }
+                else {
+                    alert(`você errou e ainda tem ${tentativas} tentativas`)
+                    tentativas--;
+                    var resposta = prompt("Qual a resposta?")
+                }
             }
-            else {
-                window.location.href = "gameover.html";
-            }
+            window.location.href = "gameover.html";
         }
     </script>
 </body>
